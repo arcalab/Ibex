@@ -1,0 +1,91 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+HTML_HEAD: <style> #content{max-width:1000px;}</style>
+#+HTML_HEAD: <style> #table-of-contents{overflow-y:auto;}</style>
+#+OPTIONS: num:nil
+#+TITLE: Ibex - Quantitative methods for cyber-physical programming
+-----
+* Project's description
+#+ATTR_HTML: :width 400
+#+ATTR_HTML: :title Iberian Ibex
+#+ATTR_HTML: :style float:right
+[[file:Spanish_Ibex_Portrait.jpg]] Thanks to advances in computational
+power and miniaturisation, software is increasingly embedded in
+infrastructures and industrial processes in order to boost efficiency,
+safety, and production. In this context it is now qualified as
+*cyber-physical* to emphasise its usual tight interaction with
+physical processes (such as velocity, movement, and temperature), and
+to sign a shift from usual software engineering practices to a more
+multifaceted view that combines computer science, control theory, and
+analysis. Actually, there has been important progress in the
+development of mathematical foundations for cyber-physical systems. Existing results typically take the form of a *hybrid
+process algebra*, intuitively adding the notion of a differential
+equation to an existing, well-established process algebra. However,
+the fact that computational processes are intermixed with physical
+ones raises challenging aspects that severely hinder these results as
+foundations for an engineering discipline of cyber-physical
+software. Specifically, the latter brings an inherent layer of
+*uncertainty*, due to noise in sensors and actuators. Moreover, it
+requires notions of *behavioural distance* for realistically comparing
+two systems in a algebraic, rigorous way.  The goal of this project is
+therefore to develop the mathematical foundations of cyber-physical
+programming by taking into account the quantitative aspects discussed
+above: uncertainty and behavioural distance. Note that our goal is
+*not* develop a specific programming language for cyber-physical
+systems, but rather to focus on core, semantic foundations and calculi
+which will then serve as basis for developing such languages.
+
+* Open positions
+We have currently available:
++ a postdoc position (duration of two years);
++ a phd studentship (duration of three years).
+
+In case you wish to know more details about any of these positions please
+contact [[https://alfa.di.uminho.pt/~nevrenato/][Renato Neves]].
+
+* Research team
+
+The project is comprised of a team from two different
+research centres. Specifically,
+
+from HASLab (INESC-TEC),
++ [[https://alfa.di.uminho.pt/~nevrenato/][Renato Neves (PI)]]
++ [[https://www.di.uminho.pt/~lsb/][Luís Soares Barbosa (co-PI)]]
++ [[https://www.di.uminho.pt/~jno/][José Nuno Oliveira]]
++ [[https://scholar.google.pt/citations?user=IC09imkAAAAJ&hl=pt-PT][Leandro Gomes]]
++ [[https://scholar.google.pt/citations?user=IxAd-PMAAAAJ&hl=pt-PT][Guillermina Cledou]]
+
+and from CISTER-ISEP,
++ [[https://jose.proenca.org/][José Proença]]
++ [[http://www.cister.isep.ipp.pt/people/david_pereira/][David Pereira]]
++ [[http://www.cister.isep.ipp.pt/people/kai_li/][Kai Li]]  
+
+* Publications
+
++ *Guarded weighted synchronous automata*. L. Gomes, A. Madeira, L. S. Barbosa, in Mathematical Structures in Computer Science (to appear), 2022.
+
++ *A logic for paraconsistent transition systems*. A. Cruz, A. Madeira,
+  L. S. Barbosa, in Proc. NCL'22: Non-Classical Logics - Theory and
+  Applications (to appear), 2022.
+
+* Dissemination
+
++ Invited talk at [[https://niccoloveltri.github.io/tsem21/][Computer Science Theory Seminar, Tallinn
+  University]]. Title: *An Internal Language for Categories Enriched
+  over Generalised Metric Spaces* ([[file:templ_pres.pdf][slides]]), 20 January 2022.
++ Invited talk at [[https://www.coalg.org/cmcs22/][CMCS'22]]. Title: TBD, Abril 2022.  
+
+* Related projects
+
++ [[http://davinci.di.uminho.pt/][DaVinci]]: Distributed Architectures: Variability and Interaction for
+  Cyber-Physical Systems.
++ [[http://klee.di.uminho.pt/][KLEE]]: Coalgebraic Modeling and Analysis for Computational Synthetic
+  Biology.
++ [[https://dali.di.uminho.pt/][Dalí]]: Dynamic logics for cyber-physical systems: towards contract
+  based design.
+
+* Acknowledgements
+
+Photo (of the [[https://en.wikipedia.org/wiki/Iberian_ibex][Iberian Ibex]]) by [[https://www.arturodefrias.com/][Arturo de Frías]].  This work is financed
+by the Portuguese funding agency FCT - Fundação para a Ciência e a
+Tecnologia (project PTDC/CCI-COM/4280/2021).
+

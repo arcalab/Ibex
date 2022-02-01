@@ -86,6 +86,10 @@ and from CISTER-ISEP,
 * Acknowledgements
 
 Photo (of the [[https://en.wikipedia.org/wiki/Iberian_ibex][Iberian Ibex]]) by [[https://www.arturodefrias.com/][Arturo de Frías]].  This work is financed
-by the Portuguese funding agency FCT - Fundação para a Ciência e a
-Tecnologia (project PTDC/CCI-COM/4280/2021).
+by the ERDF - European Regional Development Fund through the
+Operational Programme for Competitiveness and Internationalisation -
+COMPETE 2020 under the Portugal 2020 Partnership Agreement and by
+National Funds through the FCT - Fundação para a Ciência e a
+Tecnologia, I.P. (Portuguese Foundation for Science and Technology)
+within project IBEX, with reference PTDC/CCI-COM/4280/2021.
 

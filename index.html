@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-02-03 Thu 13:08 -->
+<!-- 2022-02-03 Thu 13:28 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ibex - Quantitative methods for cyber-physical programming</title>
@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
-html,button,input,select,textarea {  color: #484C66;}html {  font-size: 90%;  line-height: 1.4;}*,*:before,*:after {  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box;}a {  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  white-space: -pre-wrap;  white-space: -o-pre-wrap;  white-space: -moz-pre-wrap;  white-space: -hp-pre-wrap;  word-wrap: break-word;  text-decoration: none;}a:hover {  color: #0A4C89;}/* * Remove text-shadow in selection highlight: h5bp.com/i * These selection rule sets have to be separate. * Customize the background color to match your design. */::-moz-selection {  background: #0A4C89;  color: #FFF;  text-shadow: none;}::selection {  background: #0A4C89;  color: #FFF;  text-shadow: none;}/* * A better looking default horizontal rule */hr {  display: block;  height: 1px;  border: 0;  border-top: 1px dashed #CCC;  margin: 1em 0;  padding: 0;}/* * Remove the gap between images, videos, audio and canvas and the bottom of * their containers: h5bp.com/i/440 */audio,canvas,img,video {  vertical-align: middle;}/* * Remove default fieldset styles. */fieldset {  border: 0;  margin: 0;  padding: 0;}/* * Allow only vertical resizing of textareas. */textarea {  resize: vertical;}/* ==========================================================================   Author's custom styles   ========================================================================== */.todo,.done,.tag {  font-family: "Source Pro", Monaco, "Courier New", monospace;  padding: 0 0.3em;  background-color: #EEE;  border: 1px solid #CCC;}.todo {  color: #DD4433;}.done {  color: #44934B;}.tag {  font-size: 80%;  font-weight: normal;  margin: 0 0.3em;  display: none;}.timestamp {  color: #BEBEBE;}.timestamp-kwd {  color: #5F9EA0;}.right {  margin-left: auto;  margin-right: 0px;  text-align: right;}.left {  margin-left: 0px;  margin-right: auto;  text-align: left;}.center {  margin-left: auto;  margin-right: auto;  text-align: center;}.underline {  text-decoration: underline;}#postamble p,#preamble p {  font-size: 90%;  margin: .2em;}pre,code {  font-family: "Source Pro", Monaco, "Courier New", monospace;  padding-left: 0.3em;  padding-right: 0.3em;}pre {  font-size: 90%;  padding: 8pt;  overflow: auto;  white-space: pre;  word-wrap: normal;}pre.src {  position: relative;}pre.src:before {  display: none;  position: absolute;  background-color: #FFF;  top: 0.5em;  right: 0.5em;  padding: 4px;  border: 1px solid #CCC;}pre.src-sh:before {  content: "Shell Script";}pre.src-bash:before {  content: "Bash Script";}pre.src-emacs-lisp:before {  content: "Emacs Lisp";}pre.src-R:before {  content: "R";}pre.src-perl:before {  content: "Perl";}pre.src-java:before {  content: "Java";}pre.src-sql:before {  content: "SQL";}pre.src-c:before {  content: "C";}pre.src-cpp:before {  content: "C++";}pre.src-html:before {  content: "HTML";}table {  border-collapse: collapse;  display: block;  overflow-x: auto;}caption.t-above {  caption-side: top;}caption.t-bottom {  caption-side: bottom;}td, th {  vertical-align: top;  border: 1px solid #CCC;  padding: 0.5em;}th.right {  text-align: center;}th.left {  text-align: center;}th.center {  text-align: center;}td.right {  text-align: right;}td.left {  text-align: left;}td.center {  text-align: center;}dt {  font-weight: bold;}#footnotes {  border-top: 5px solid #0A4C89;  margin-bottom: 5em;}#footnotes h2 {  display: none;}#text-footnotes {  margin-top: 1em;}.footpara:nth-child(2) {  display: inline;}.footpara {  display: block;}.footdef sup:before {  content: "[";}.footdef sup:after {  content: "]";}.footdef p {  display: inline;}figure {  margin: 0;}figure img {  max-width: 100%;}figcaption {  text-align: center;  font-size: 0.8rem;}.inlinetask {  padding: 10px;  border: 2px solid gray;  margin: 10px;  background: #ffffcc;}#org-div-home-and-up {  text-align: right;  font-size: 70%;  white-space: nowrap;}textarea {  overflow-x: auto;}.linenr {  font-size: smaller;}.code-highlighted {  background-color: #ffff00;}.org-info-js_info-navigation {  border-style: none;}#org-info-js_console-label {  font-size: 10px;  font-weight: bold;  white-space: nowrap;}.org-info-js_search-highlight {  background-color: #ffff00;  color: #000000;  font-weight: bold;}p.verse,blockquote {  margin: 0;  padding: 0;  padding-left: 3%;  border-left: 5px solid #0A4C89;}body {  font-family: Lora, Palatino, Georgia, serif;  width: 92%;  max-width: 1024px;  margin: 0 auto;  background-color: #FFF;}h2 {  line-height: 1.62em;}.title {  margin: 0 0 2em 0;  line-height: 2em;  border-bottom: 5px solid #0A4C89;  text-align: center;}#postamble {  font-size: 80%;  line-height: 1.4em;  text-align: right;}h1, h2, h3, h4, h5, h6 {  font-family: "Source Sans Pro", sans-serif;  color: #222;}.outline-2 {  margin-bottom: 4em;}.outline-2 h2 {  border-bottom: 1px solid #CCC;}.outline-text-2 code, pre {  background-color: #EEE;}#table-of-contents {  display: none;  margin-left: 0.5em;}#text-table-of-contents ul {  padding-left: 1.8em;}#text-table-of-contents li {  list-style-type: circle;  margin: 0.4em 0;}#text-table-of-contents ul ul {  margin: 0;}#text-table-of-contents li li {  font-weight: normal;  font-size: 90%;  margin: 0;}#content {  overflow: hidden;  *zoom: 1;}/* ==========================================================================   EXAMPLE Media Queries for Responsive Design.   These examples override the primary ('mobile first') styles.   Modify as content requires.   ========================================================================== */@media only screen and (min-width: 35em) {  /* Style adjustments for viewports that meet the condition */}@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {  /* Style adjustments for high resolution devices */}/* ==========================================================================   Print styles.   Inlined to avoid required HTTP connection: h5bp.com/r   ========================================================================== */@media print {  * {    background: transparent !important;    color: #000 !important;    /* Black prints faster: h5bp.com/s */    box-shadow: none !important;    text-shadow: none !important;  }  a,  a:visited {    text-decoration: underline;  }  a[href]:after {    content: " (" attr(href) ")";  }  abbr[title]:after {    content: " (" attr(title) ")";  }  /*   * Don't show links for images, or javascript/internal links   */  .ir a:after,  a[href^="javascript:"]:after,  a[href^="#"]:after {    content: "";  }  pre,  blockquote {    /* border: 1px solid #999; */    page-break-inside: avoid;  }  thead {    display: table-header-group;    /* h5bp.com/t */  }  tr,  img {    page-break-inside: avoid;  }  img {    max-width: 100% !important;  }  @page {    margin: 0.5cm;  }  p,  h2,  h3 {    orphans: 3;    widows: 3;  }  h2,  h3 {    page-break-after: avoid;  }  #table-of-contents {    display: block;    width: initial;    border: none;  }  #table-of-contents a {    text-decoration: none;  }}/* large screen */@media screen and (min-width: 40rem) {  html {    font-size: 100%;  }  #table-of-contents {    display: block;    padding: 1em;    width: 32%;    min-width: 18em;    float: right;    background-color: #EEE;    position: relative;    /* required by z-index */    z-index: 5000;    border: 1px solid #CCC;  }  .tag {    display: initial;  }}
+html,button,input,select,textarea {  color: #484C66;}html {  font-size: 90%;  line-height: 1.4;}*,*:before,*:after {  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box;}a {  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  white-space: -pre-wrap;  white-space: -o-pre-wrap;  white-space: -moz-pre-wrap;  white-space: -hp-pre-wrap;  word-wrap: break-word;  text-decoration: none;}a:hover {  color: #0A4C89;}/* * Remove text-shadow in selection highlight: h5bp.com/i * These selection rule sets have to be separate. * Customize the background color to match your design. */::-moz-selection {  background: #0A4C89;  color: #FFF;  text-shadow: none;}::selection {  background: #0A4C89;  color: #FFF;  text-shadow: none;}/* * A better looking default horizontal rule */hr {  display: block;  height: 1px;  border: 0;  border-top: 1px dashed #CCC;  margin: 1em 0;  padding: 0;}/* * Remove the gap between images, videos, audio and canvas and the bottom of * their containers: h5bp.com/i/440 */audio,canvas,img,video {  vertical-align: middle;}/* * Remove default fieldset styles. */fieldset {  border: 0;  margin: 0;  padding: 0;}/* * Allow only vertical resizing of textareas. */textarea {  resize: vertical;}/* ==========================================================================   Author's custom styles   ========================================================================== */.todo,.done,.tag {  font-family: "Source Pro", Monaco, "Courier New", monospace;  padding: 0 0.3em;  background-color: #EEE;  border: 1px solid #CCC;}.todo {  color: #DD4433;}.done {  color: #44934B;}.tag {  font-size: 80%;  font-weight: normal;  margin: 0 0.3em;  display: none;}.timestamp {  color: #BEBEBE;}.timestamp-kwd {  color: #5F9EA0;}.right {  margin-left: auto;  margin-right: 0px;  text-align: right;}.left {  margin-left: 0px;  margin-right: auto;  text-align: left;}.center {  margin-left: auto;  margin-right: auto;  text-align: center;}.underline {  text-decoration: underline;}#postamble p,#preamble p {  font-size: 90%;  margin: .2em;}pre,code {  font-family: "Source Pro", Monaco, "Courier New", monospace;  padding-left: 0.3em;  padding-right: 0.3em;}pre {  font-size: 90%;  padding: 8pt;  overflow: auto;  white-space: pre;  word-wrap: normal;}pre.src {  position: relative;}pre.src:before {  display: none;  position: absolute;  background-color: #FFF;  top: 0.5em;  right: 0.5em;  padding: 4px;  border: 1px solid #CCC;}pre.src-sh:before {  content: "Shell Script";}pre.src-bash:before {  content: "Bash Script";}pre.src-emacs-lisp:before {  content: "Emacs Lisp";}pre.src-R:before {  content: "R";}pre.src-perl:before {  content: "Perl";}pre.src-java:before {  content: "Java";}pre.src-sql:before {  content: "SQL";}pre.src-c:before {  content: "C";}pre.src-cpp:before {  content: "C++";}pre.src-html:before {  content: "HTML";}table {  border-collapse: collapse;  display: block;  overflow-x: auto;}caption.t-above {  caption-side: top;}caption.t-bottom {  caption-side: bottom;}td, th {  vertical-align: top;  border: 1px solid #CCC;  padding: 0.5em;}th.right {  text-align: center;}th.left {  text-align: center;}th.center {  text-align: center;}td.right {  text-align: right;}td.left {  text-align: left;}td.center {  text-align: center;}dt {  font-weight: bold;}#footnotes {  border-top: 5px solid #0A4C89;  margin-bottom: 5em;}#footnotes h2 {  display: none;}#text-footnotes {  margin-top: 1em;}.footpara:nth-child(2) {  display: inline;}.footpara {  display: block;}.footdef sup:before {  content: "[";}.footdef sup:after {  content: "]";}.footdef p {  display: inline;}figure {  margin: 0;}figure img {  max-width: 100%;}figcaption {  text-align: center;  font-size: 0.8rem;}.inlinetask {  padding: 10px;  border: 2px solid gray;  margin: 10px;  background: #ffffcc;}#org-div-home-and-up {  text-align: right;  font-size: 70%;  white-space: nowrap;}textarea {  overflow-x: auto;}.linenr {  font-size: smaller;}.code-highlighted {  background-color: #ffff00;}.org-info-js_info-navigation {  border-style: none;}#org-info-js_console-label {  font-size: 10px;  font-weight: bold;  white-space: nowrap;}.org-info-js_search-highlight {  background-color: #ffff00;  color: #000000;  font-weight: bold;}p.verse,blockquote {  margin: 0;  padding: 0;  padding-left: 3%;  border-left: 5px solid #0A4C89;}body {  font-family: Lora, "Source Sans Pro", Georgia, serif;  width: 92%;  max-width: 1024px;  margin: 0 auto;  background-color: #FFF;}h2 {  line-height: 1.62em;}.title {  margin: 0 0 2em 0;  line-height: 2em;  border-bottom: 5px solid #0A4C89;  text-align: center;}#postamble {  font-size: 80%;  line-height: 1.4em;  text-align: right;}h1, h2, h3, h4, h5, h6 {  font-family: "Source Sans Pro", sans-serif;  color: #222;}.outline-2 {  margin-bottom: 4em;}.outline-2 h2 {  border-bottom: 1px solid #CCC;}.outline-text-2 code, pre {  background-color: #EEE;}#table-of-contents {  display: none;  margin-left: 0.5em;}#text-table-of-contents ul {  padding-left: 1.8em;}#text-table-of-contents li {  list-style-type: circle;  margin: 0.4em 0;}#text-table-of-contents ul ul {  margin: 0;}#text-table-of-contents li li {  font-weight: normal;  font-size: 90%;  margin: 0;}#content {  overflow: hidden;  *zoom: 1;}/* ==========================================================================   EXAMPLE Media Queries for Responsive Design.   These examples override the primary ('mobile first') styles.   Modify as content requires.   ========================================================================== */@media only screen and (min-width: 35em) {  /* Style adjustments for viewports that meet the condition */}@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {  /* Style adjustments for high resolution devices */}/* ==========================================================================   Print styles.   Inlined to avoid required HTTP connection: h5bp.com/r   ========================================================================== */@media print {  * {    background: transparent !important;    color: #000 !important;    /* Black prints faster: h5bp.com/s */    box-shadow: none !important;    text-shadow: none !important;  }  a,  a:visited {    text-decoration: underline;  }  a[href]:after {    content: " (" attr(href) ")";  }  abbr[title]:after {    content: " (" attr(title) ")";  }  /*   * Don't show links for images, or javascript/internal links   */  .ir a:after,  a[href^="javascript:"]:after,  a[href^="#"]:after {    content: "";  }  pre,  blockquote {    /* border: 1px solid #999; */    page-break-inside: avoid;  }  thead {    display: table-header-group;    /* h5bp.com/t */  }  tr,  img {    page-break-inside: avoid;  }  img {    max-width: 100% !important;  }  @page {    margin: 0.5cm;  }  p,  h2,  h3 {    orphans: 3;    widows: 3;  }  h2,  h3 {    page-break-after: avoid;  }  #table-of-contents {    display: block;    width: initial;    border: none;  }  #table-of-contents a {    text-decoration: none;  }}/* large screen */@media screen and (min-width: 40rem) {  html {    font-size: 100%;  }  #table-of-contents {    display: block;    padding: 1em;    width: 32%;    min-width: 18em;    float: right;    background-color: #EEE;    position: relative;    /* required by z-index */    z-index: 5000;    border: 1px solid #CCC;  }  .tag {    display: initial;  }}
 </style>
 <script type="text/javascript">
 $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>");    $('.seealso').before("<p class='admonition-title seealso'>See also</p>");    $('.warning').before("<p class='admonition-title warning'>Warning</p>");    $('.caution').before("<p class='admonition-title caution'>Caution</p>");    $('.attention').before("<p class='admonition-title attention'>Attention</p>");    $('.tip').before("<p class='admonition-title tip'>Tip</p>");    $('.important').before("<p class='admonition-title important'>Important</p>");    $('.hint').before("<p class='admonition-title hint'>Hint</p>");    $('.error').before("<p class='admonition-title error'>Error</p>");    $('.danger').before("<p class='admonition-title danger'>Danger</p>");});$( document ).ready(function() {        $(document).on('click', "[data-toggle='wy-nav-top']", function() {      $("[data-toggle='wy-nav-shift']").toggleClass("shift");      $("[data-toggle='rst-versions']").toggleClass("shift");    });        $(document).on('click', ".wy-menu-vertical .current ul li a", function() {      $("[data-toggle='wy-nav-shift']").removeClass("shift");      $("[data-toggle='rst-versions']").toggleClass("shift");    });    $(document).on('click', "[data-toggle='rst-current-version']", function() {      $("[data-toggle='rst-versions']").toggleClass("shift-up");    });        $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");});$( document ).ready(function() {    $('#text-table-of-contents ul').first().addClass('nav');    $('body').scrollspy({target: '#text-table-of-contents'});            var $postamble = $('#postamble');    var $tableOfContents = $('#table-of-contents');    $tableOfContents.css({paddingBottom: $postamble.outerHeight()});        var toggleSidebar = $('<div id="toggle-sidebar"><a href="#table-of-contents"><h2>Table of Contents</h2></a></div>');    $('#content').prepend(toggleSidebar);        var closeBtn = $('<a class="close-sidebar" href="#">Close</a>');    var tocTitle = $('#table-of-contents').find('h2');    tocTitle.append(closeBtn);});window.SphinxRtdTheme = (function (jquery) {    var stickyNav = (function () {        var navBar,            win,            stickyNavCssClass = 'stickynav',            applyStickNav = function () {                if (navBar.height() <= win.height()) {                    navBar.addClass(stickyNavCssClass);                } else {                    navBar.removeClass(stickyNavCssClass);                }            },            enable = function () {                applyStickNav();                win.on('resize', applyStickNav);            },            init = function () {                navBar = jquery('nav.wy-nav-side:first');                win    = jquery(window);            };        jquery(init);        return {            enable : enable        };    }());    return {        StickyNav : stickyNav    };}($));
@@ -46,19 +46,19 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf3a6376">Project's description</a></li>
-<li><a href="#orge717bae">Research team</a></li>
-<li><a href="#orgcc1e7d4">Publications</a></li>
-<li><a href="#org773da08">Dissemination</a></li>
-<li><a href="#orgdc315c2">Previous projects</a></li>
-<li><a href="#orgb094ff1">Acknowledgements</a></li>
+<li><a href="#org242f477">Project's description</a></li>
+<li><a href="#org720424f">Research team</a></li>
+<li><a href="#org29fb76c">Publications</a></li>
+<li><a href="#org104afb9">Dissemination</a></li>
+<li><a href="#org1fd0cce">Previous projects</a></li>
+<li><a href="#org87639d9">Acknowledgements</a></li>
 </ul>
 </div>
 </nav>
 <hr>
-<div id="outline-container-orgf3a6376" class="outline-2">
-<h2 id="orgf3a6376">Project's description</h2>
-<div class="outline-text-2" id="text-orgf3a6376">
+<div id="outline-container-org242f477" class="outline-2">
+<h2 id="org242f477">Project's description</h2>
+<div class="outline-text-2" id="text-org242f477">
 <p>
 Thanks to advances in computational power and miniaturisation,
 software is increasingly embedded in infrastructures and industrial
@@ -76,7 +76,7 @@ algebra.
 </p>
 
 
-<figure id="org57360cb">
+<figure id="org2c589ac">
 <img src="Spanish_Ibex_Portrait.jpg" alt="Spanish_Ibex_Portrait.jpg" style="float:left; margin: 0px 10px 0px 0px" title="Iberian Ibex" width="300">
 
 </figure>
@@ -108,13 +108,13 @@ details about any of these positions please contact <a href="https://alfa.di.umi
 </div>
 
 
-<div id="outline-container-orge717bae" class="outline-2">
-<h2 id="orge717bae">Research team</h2>
-<div class="outline-text-2" id="text-orge717bae">
+<div id="outline-container-org720424f" class="outline-2">
+<h2 id="org720424f">Research team</h2>
+<div class="outline-text-2" id="text-org720424f">
 <p>
 The project's team is comprised of the researchers listed below,
-which brings together three different research centres: <a href="https://haslab.uminho.pt/">HASLab
-(INESC-TEC)</a>, <a href="http://www.cister.isep.ipp.pt/">CISTER-ISEP</a>, and <a href="https://cidma.ua.pt/">CIDMA-UA</a>.
+which brings together three different research centres: <a href="https://haslab.uminho.pt/">HASLab (INESC-TEC)</a>, <a href="http://www.cister.isep.ipp.pt/">CISTER-ISEP</a>,
+and <a href="https://cidma.ua.pt/">CIDMA-UA</a>.
 </p>
 
 <ul class="org-ul">
@@ -131,9 +131,9 @@ which brings together three different research centres: <a href="https://haslab.
 </div>
 </div>
 
-<div id="outline-container-orgcc1e7d4" class="outline-2">
-<h2 id="orgcc1e7d4">Publications</h2>
-<div class="outline-text-2" id="text-orgcc1e7d4">
+<div id="outline-container-org29fb76c" class="outline-2">
+<h2 id="org29fb76c">Publications</h2>
+<div class="outline-text-2" id="text-org29fb76c">
 <p><a name="cruz22"></a>
 
 Ana Cruz, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
@@ -157,9 +157,9 @@ Leandro Gomes, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
 </div>
 </div>
 
-<div id="outline-container-org773da08" class="outline-2">
-<h2 id="org773da08">Dissemination</h2>
-<div class="outline-text-2" id="text-org773da08">
+<div id="outline-container-org104afb9" class="outline-2">
+<h2 id="org104afb9">Dissemination</h2>
+<div class="outline-text-2" id="text-org104afb9">
 <table>
 
 
@@ -187,9 +187,9 @@ Leandro Gomes, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
 </div>
 </div>
 
-<div id="outline-container-orgdc315c2" class="outline-2">
-<h2 id="orgdc315c2">Previous projects</h2>
-<div class="outline-text-2" id="text-orgdc315c2">
+<div id="outline-container-org1fd0cce" class="outline-2">
+<h2 id="org1fd0cce">Previous projects</h2>
+<div class="outline-text-2" id="text-org1fd0cce">
 <table>
 
 
@@ -219,9 +219,9 @@ Leandro Gomes, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
 </div>
 
 
-<div id="outline-container-orgb094ff1" class="outline-2">
-<h2 id="orgb094ff1">Acknowledgements</h2>
-<div class="outline-text-2" id="text-orgb094ff1">
+<div id="outline-container-org87639d9" class="outline-2">
+<h2 id="org87639d9">Acknowledgements</h2>
+<div class="outline-text-2" id="text-org87639d9">
 <p>
 Photo (of the <a href="https://en.wikipedia.org/wiki/Iberian_ibex">Iberian Ibex</a>) by <a href="https://www.arturodefrias.com/">Arturo de Frías</a>.  This work is financed
 by the ERDF - European Regional Development Fund through the
@@ -236,7 +236,7 @@ within project IBEX, with reference PTDC/CCI-COM/4280/2021.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Renato Neves</p>
-<p class="date">Created: 2022-02-03 Thu 13:08</p>
+<p class="date">Created: 2022-02-03 Thu 13:28</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

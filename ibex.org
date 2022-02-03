@@ -52,8 +52,8 @@ details about any of these positions please contact [[https://alfa.di.uminho.pt/
 * Research team
 
 The project's team is comprised of the researchers listed below,
-which brings together three different research centres: [[https://haslab.uminho.pt/][HASLab
-(INESC-TEC)]], [[http://www.cister.isep.ipp.pt/][CISTER-ISEP]], and [[https://cidma.ua.pt/][CIDMA-UA]].
+which brings together three different research centres: [[https://haslab.uminho.pt/][HASLab (INESC-TEC)]], [[http://www.cister.isep.ipp.pt/][CISTER-ISEP]],
+and [[https://cidma.ua.pt/][CIDMA-UA]].
 
 + [[https://alfa.di.uminho.pt/~nevrenato/][Renato Neves (PI)]]
 + [[https://www.di.uminho.pt/~lsb/][Luís Soares Barbosa (co-PI)]]

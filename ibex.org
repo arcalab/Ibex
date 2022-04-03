@@ -44,9 +44,8 @@ systems, but rather to focus on core, semantic foundations and calculi
 which will then serve as basis for developing such languages.
 
 [[./new.gif]]
-We have available a *postdoc position* (duration of two years) and a *Ph.D.
-studentship* (duration of three years).  In case you wish to know more
-details about any of these positions please contact [[https://alfa.di.uminho.pt/~nevrenato/][us]]!
+We have available a *postdoc position* (duration of two years).  In case you wish to know more
+details about this position please contact [[https://alfa.di.uminho.pt/~nevrenato/][us]]!
 
 
 * Research team
@@ -92,8 +91,9 @@ Leandro Gomes, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
 
 * Dissemination
 
-| Invited talk at [[https://niccoloveltri.github.io/tsem21/][C. S. Theory Seminar]], Tallinn. | [[file:templ_pres.pdf][An Internal Language for Categories Enriched over Generalised Metric Spaces]] | Jan. 2022 |
-| Invited talk at [[https://www.coalg.org/cmcs22/][CMCS'22]], Munich.               | ---                                                                         | Abr. 2022 |
+| Invited talk at [[https://niccoloveltri.github.io/tsem21/][C. S. Theory Seminar]], Tallinn.  | [[file:templ_pres.pdf][An Internal Language for Categories Enriched over Generalised Metric Spaces]] | Jan. 2022 |
+| Invited talk at [[https://www.coalg.org/cmcs22/][CMCS'22]], Munich.                | [[file:Renato.pdf][Coalgebra meets Hybrid Systems]]                                              | Abr. 2022 |
+| Ibex meeting as part of a  [[http://wadt2022.web.ua.pt/][WADT'22]] special track                                | ---                                                                         | Jun. 2022 |
 
 * Previous projects
 
@@ -111,4 +111,15 @@ COMPETE 2020 under the Portugal 2020 Partnership Agreement and by
 National Funds through the FCT - Fundação para a Ciência e a
 Tecnologia, I.P. (Portuguese Foundation for Science and Technology)
 within project IBEX, with reference PTDC/CCI-COM/4280/2021.
+
+#+ATTR_HTML: :width 180
+#+ATTR_HTML: :title Portugal 
+#+ATTR_HTML: :style float:left; margin: 0px 10px 0px 0px
+[[file:portugal.png]]
+
+#+ATTR_HTML: :width 300
+#+ATTR_HTML: :title FCT 
+#+ATTR_HTML: :style float:left; margin: 0px 10px 0px 0px
+[[file:fct.jpg]]
+
 

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-04-03 Sun 12:47 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ibex - Quantitative methods for cyber-physical programming</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Renato Neves">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+html,button,input,select,textarea {  color: #484C66;}html {  font-size: 90%;  line-height: 1.4;}*,*:before,*:after {  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box;}a {  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  white-space: -pre-wrap;  white-space: -o-pre-wrap;  white-space: -moz-pre-wrap;  white-space: -hp-pre-wrap;  word-wrap: break-word;  text-decoration: none;}a:hover {  color: #0A4C89;}/* * Remove text-shadow in selection highlight: h5bp.com/i * These selection rule sets have to be separate. * Customize the background color to match your design. */::-moz-selection {  background: #0A4C89;  color: #FFF;  text-shadow: none;}::selection {  background: #0A4C89;  color: #FFF;  text-shadow: none;}/* * A better looking default horizontal rule */hr {  display: block;  height: 1px;  border: 0;  border-top: 1px dashed #CCC;  margin: 1em 0;  padding: 0;}/* * Remove the gap between images, videos, audio and canvas and the bottom of * their containers: h5bp.com/i/440 */audio,canvas,img,video {  vertical-align: middle;}/* * Remove default fieldset styles. */fieldset {  border: 0;  margin: 0;  padding: 0;}/* * Allow only vertical resizing of textareas. */textarea {  resize: vertical;}/* ==========================================================================   Author's custom styles   ========================================================================== */.todo,.done,.tag {  font-family: "Source Pro", Monaco, "Courier New", monospace;  padding: 0 0.3em;  background-color: #EEE;  border: 1px solid #CCC;}.todo {  color: #DD4433;}.done {  color: #44934B;}.tag {  font-size: 80%;  font-weight: normal;  margin: 0 0.3em;  display: none;}.timestamp {  color: #BEBEBE;}.timestamp-kwd {  color: #5F9EA0;}.right {  margin-left: auto;  margin-right: 0px;  text-align: right;}.left {  margin-left: 0px;  margin-right: auto;  text-align: left;}.center {  margin-left: auto;  margin-right: auto;  text-align: center;}.underline {  text-decoration: underline;}#postamble p,#preamble p {  font-size: 90%;  margin: .2em;}pre,code {  font-family: "Source Pro", Monaco, "Courier New", monospace;  padding-left: 0.3em;  padding-right: 0.3em;}pre {  font-size: 90%;  padding: 8pt;  overflow: auto;  white-space: pre;  word-wrap: normal;}pre.src {  position: relative;}pre.src:before {  display: none;  position: absolute;  background-color: #FFF;  top: 0.5em;  right: 0.5em;  padding: 4px;  border: 1px solid #CCC;}pre.src-sh:before {  content: "Shell Script";}pre.src-bash:before {  content: "Bash Script";}pre.src-emacs-lisp:before {  content: "Emacs Lisp";}pre.src-R:before {  content: "R";}pre.src-perl:before {  content: "Perl";}pre.src-java:before {  content: "Java";}pre.src-sql:before {  content: "SQL";}pre.src-c:before {  content: "C";}pre.src-cpp:before {  content: "C++";}pre.src-html:before {  content: "HTML";}table {  border-collapse: collapse;  display: block;  overflow-x: auto;}caption.t-above {  caption-side: top;}caption.t-bottom {  caption-side: bottom;}td, th {  vertical-align: top;  border: 1px solid #CCC;  padding: 0.5em;}th.right {  text-align: center;}th.left {  text-align: center;}th.center {  text-align: center;}td.right {  text-align: right;}td.left {  text-align: left;}td.center {  text-align: center;}dt {  font-weight: bold;}#footnotes {  border-top: 5px solid #0A4C89;  margin-bottom: 5em;}#footnotes h2 {  display: none;}#text-footnotes {  margin-top: 1em;}.footpara:nth-child(2) {  display: inline;}.footpara {  display: block;}.footdef sup:before {  content: "[";}.footdef sup:after {  content: "]";}.footdef p {  display: inline;}figure {  margin: 0;}figure img {  max-width: 100%;}figcaption {  text-align: center;  font-size: 0.8rem;}.inlinetask {  padding: 10px;  border: 2px solid gray;  margin: 10px;  background: #ffffcc;}#org-div-home-and-up {  text-align: right;  font-size: 70%;  white-space: nowrap;}textarea {  overflow-x: auto;}.linenr {  font-size: smaller;}.code-highlighted {  background-color: #ffff00;}.org-info-js_info-navigation {  border-style: none;}#org-info-js_console-label {  font-size: 10px;  font-weight: bold;  white-space: nowrap;}.org-info-js_search-highlight {  background-color: #ffff00;  color: #000000;  font-weight: bold;}p.verse,blockquote {  margin: 0;  padding: 0;  padding-left: 3%;  border-left: 5px solid #0A4C89;}body {  font-family: Lora, "Source Sans Pro", Georgia, serif;  width: 92%;  max-width: 1024px;  margin: 0 auto;  background-color: #FFF;}h2 {  line-height: 1.62em;}.title {  margin: 0 0 2em 0;  line-height: 2em;  border-bottom: 5px solid #0A4C89;  text-align: center;}#postamble {  font-size: 80%;  line-height: 1.4em;  text-align: right;}h1, h2, h3, h4, h5, h6 {  font-family: "Source Sans Pro", sans-serif;  color: #222;}.outline-2 {  margin-bottom: 4em;}.outline-2 h2 {  border-bottom: 1px solid #CCC;}.outline-text-2 code, pre {  background-color: #EEE;}#table-of-contents {  display: none;  margin-left: 0.5em;}#text-table-of-contents ul {  padding-left: 1.8em;}#text-table-of-contents li {  list-style-type: circle;  margin: 0.4em 0;}#text-table-of-contents ul ul {  margin: 0;}#text-table-of-contents li li {  font-weight: normal;  font-size: 90%;  margin: 0;}#content {  overflow: hidden;  *zoom: 1;}/* ==========================================================================   EXAMPLE Media Queries for Responsive Design.   These examples override the primary ('mobile first') styles.   Modify as content requires.   ========================================================================== */@media only screen and (min-width: 35em) {  /* Style adjustments for viewports that meet the condition */}@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {  /* Style adjustments for high resolution devices */}/* ==========================================================================   Print styles.   Inlined to avoid required HTTP connection: h5bp.com/r   ========================================================================== */@media print {  * {    background: transparent !important;    color: #000 !important;    /* Black prints faster: h5bp.com/s */    box-shadow: none !important;    text-shadow: none !important;  }  a,  a:visited {    text-decoration: underline;  }  a[href]:after {    content: " (" attr(href) ")";  }  abbr[title]:after {    content: " (" attr(title) ")";  }  /*   * Don't show links for images, or javascript/internal links   */  .ir a:after,  a[href^="javascript:"]:after,  a[href^="#"]:after {    content: "";  }  pre,  blockquote {    /* border: 1px solid #999; */    page-break-inside: avoid;  }  thead {    display: table-header-group;    /* h5bp.com/t */  }  tr,  img {    page-break-inside: avoid;  }  img {    max-width: 100% !important;  }  @page {    margin: 0.5cm;  }  p,  h2,  h3 {    orphans: 3;    widows: 3;  }  h2,  h3 {    page-break-after: avoid;  }  #table-of-contents {    display: block;    width: initial;    border: none;  }  #table-of-contents a {    text-decoration: none;  }}/* large screen */@media screen and (min-width: 40rem) {  html {    font-size: 100%;  }  #table-of-contents {    display: block;    padding: 1em;    width: 32%;    min-width: 18em;    float: right;    background-color: #EEE;    position: relative;    /* required by z-index */    z-index: 5000;    border: 1px solid #CCC;  }  .tag {    display: initial;  }}
+</style>
+<script type="text/javascript">
+$(function() {    $('.note').before("<p class='admonition-title note'>Note</p>");    $('.seealso').before("<p class='admonition-title seealso'>See also</p>");    $('.warning').before("<p class='admonition-title warning'>Warning</p>");    $('.caution').before("<p class='admonition-title caution'>Caution</p>");    $('.attention').before("<p class='admonition-title attention'>Attention</p>");    $('.tip').before("<p class='admonition-title tip'>Tip</p>");    $('.important').before("<p class='admonition-title important'>Important</p>");    $('.hint').before("<p class='admonition-title hint'>Hint</p>");    $('.error').before("<p class='admonition-title error'>Error</p>");    $('.danger').before("<p class='admonition-title danger'>Danger</p>");});$( document ).ready(function() {        $(document).on('click', "[data-toggle='wy-nav-top']", function() {      $("[data-toggle='wy-nav-shift']").toggleClass("shift");      $("[data-toggle='rst-versions']").toggleClass("shift");    });        $(document).on('click', ".wy-menu-vertical .current ul li a", function() {      $("[data-toggle='wy-nav-shift']").removeClass("shift");      $("[data-toggle='rst-versions']").toggleClass("shift");    });    $(document).on('click', "[data-toggle='rst-current-version']", function() {      $("[data-toggle='rst-versions']").toggleClass("shift-up");    });        $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");});$( document ).ready(function() {    $('#text-table-of-contents ul').first().addClass('nav');    $('body').scrollspy({target: '#text-table-of-contents'});            var $postamble = $('#postamble');    var $tableOfContents = $('#table-of-contents');    $tableOfContents.css({paddingBottom: $postamble.outerHeight()});        var toggleSidebar = $('<div id="toggle-sidebar"><a href="#table-of-contents"><h2>Table of Contents</h2></a></div>');    $('#content').prepend(toggleSidebar);        var closeBtn = $('<a class="close-sidebar" href="#">Close</a>');    var tocTitle = $('#table-of-contents').find('h2');    tocTitle.append(closeBtn);});window.SphinxRtdTheme = (function (jquery) {    var stickyNav = (function () {        var navBar,            win,            stickyNavCssClass = 'stickynav',            applyStickNav = function () {                if (navBar.height() <= win.height()) {                    navBar.addClass(stickyNavCssClass);                } else {                    navBar.removeClass(stickyNavCssClass);                }            },            enable = function () {                applyStickNav();                win.on('resize', applyStickNav);            },            init = function () {                navBar = jquery('nav.wy-nav-side:first');                win    = jquery(window);            };        jquery(init);        return {            enable : enable        };    }());    return {        StickyNav : stickyNav    };}($));
+</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<header>
+<h1 class="title">Ibex - Quantitative methods for cyber-physical programming</h1>
+</header><nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0f0f68e">Project's description</a></li>
+<li><a href="#orgf092031">Research team</a></li>
+<li><a href="#orga556ff4">Publications</a></li>
+<li><a href="#org0f95d45">Dissemination</a></li>
+<li><a href="#orgfdcf1e7">Previous projects</a></li>
+<li><a href="#org714a10e">Acknowledgements</a></li>
+</ul>
+</div>
+</nav>
+<hr>
+<div id="outline-container-org0f0f68e" class="outline-2">
+<h2 id="org0f0f68e">Project's description</h2>
+<div class="outline-text-2" id="text-org0f0f68e">
+<p>
+<figure id="org0e8a9dc">
+<img src="Spanish_Ibex_Portrait.jpg" alt="Spanish_Ibex_Portrait.jpg" style="float:left; margin: 0px 10px 00px 0px" title="Iberian Ibex" width="300">
+</figure>
+
+Thanks to advances in computational power and miniaturisation,
+software is increasingly embedded in infrastructures and industrial
+processes to boost efficiency, safety, and production. In
+this context it is now qualified as <b>cyber-physical</b> to emphasise its
+ tight interaction with physical processes (such as velocity,
+movement, and temperature), and to sign a shift from usual software
+engineering practices to a more multifaceted view that combines
+computer science, control theory, and analysis. There has been 
+important progress in the development of mathematical foundations
+for cyber-physical systems. Existing results typically take the form
+of a <b>hybrid process algebra</b>, which add the notion of a
+differential equation to an existing, well-established process
+algebra.
+However, the fact that computational processes are intermixed with physical
+ones raises challenging aspects that severely hinder these results as
+foundations for an engineering discipline of cyber-physical
+software. Specifically, the latter bring an inherent layer of
+<b>uncertainty</b>, due to noise in sensors and actuators.
+Moreover, they
+require notions of <b>behavioural distance</b> for realistically comparing
+two systems in an algebraic, rigorous way.  The goal of this project is
+thus to develop the mathematical foundations of cyber-physical
+programming by taking into account the quantitative aspects discussed
+above: uncertainty and behavioural distance. Note that our goal is
+<b>not</b> develop a specific programming language for cyber-physical
+systems, but rather to focus on core, semantic foundations and calculi
+which will then serve as basis for developing such languages.
+</div>
+</div>
+
+
+<div id="outline-container-orgf092031" class="outline-2">
+<h2 id="orgf092031">Research team</h2>
+<div class="outline-text-2" id="text-orgf092031">
+The project's team is comprised of the researchers listed below,
+which brings together three different research centres: <a href="https://haslab.uminho.pt/">HASLab (INESC-TEC)</a>, <a href="http://www.cister.isep.ipp.pt/">CISTER-ISEP</a>,
+and <a href="https://cidma.ua.pt/">CIDMA-UA</a>.
+
+<ul class="org-ul">
+<li><a href="https://alfa.di.uminho.pt/~nevrenato/">Renato Neves (PI)</a></li>
+<li><a href="https://www.di.uminho.pt/~lsb/">Luís Soares Barbosa (co-PI)</a></li>
+<li><a href="https://www.di.uminho.pt/~jno/">José Nuno Oliveira</a></li>
+<li><a href="https://scholar.google.pt/citations?user=IC09imkAAAAJ&amp;hl=pt-PT">Leandro Gomes</a></li>
+<li><a href="https://jose.proenca.org/">José Proença</a></li>
+<li><a href="http://www.cister.isep.ipp.pt/people/david_pereira/">David Pereira</a></li>
+<li><a href="http://www.cister.isep.ipp.pt/people/kai_li/">Kai Li</a></li>
+<li><a href="http://sweet.ua.pt/madeira/">Alexandre Madeira</a></li>
+<li><a href="https://www.inesctec.pt/en/people/andre-manuel-sequeira">André Sequeira</a></li>
+<li><a href="https://www.inesctec.pt/pt/pessoas/juliana-patricio-souza">Juliana Souza</a></li>
+<li><a href="https://www.norileo.com/">Norihiro Yamada</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga556ff4" class="outline-2">
+<h2 id="orga556ff4">Publications</h2>
+<div class="outline-text-2" id="text-orga556ff4">
+
+</div>
+<!-- add bib here -->
+<p><a name="cruz22"></a>
+
+Ana Cruz, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
+ A logic for paraconsistent transition systems.
+ In <em>NCL'22: Non-Classical Logics - Theory and Applications</em>, 2022
+  (in print).
+[&nbsp;<a href="bib_bib.html#cruz22">bib</a>&nbsp;| 
+<a href="cruz22.pdf">.pdf</a>&nbsp;]
+
+</p>
+
+<p><a name="gomes22"></a>
+
+Leandro Gomes, Alexandre Madeira, and Luis&nbsp;S. Barbosa.
+ Guarded weighted synchronous automata.
+ <em>Mathematical Structures in Computer Science</em>, 2022 (in print).
+[&nbsp;<a href="bib_bib.html#gomes22">bib</a>&nbsp;]
+
+</p>
+
+<p><a name="oliveira22"></a>
+
+Pedro Silva, Jos&eacute;&nbsp;N. Oliveira, Nuno Macedo, and Alcino Cunha.
+ Quantitative relational modelling with qalloy.
+ In Abhik Roychoudhury, Cristian Cadar, and Miryung Kim, editors, <em>
+  Proceedings of the 30th ACM Joint European Software Engineering Conference
+  and Symposium on the Foundations of Software Engineering, ESEC/FSE 2022,
+  Singapore, Singapore, November 14-18, 2022</em>, pages 885--896. ACM, 2022.
+[&nbsp;<a href="bib_bib.html#oliveira22">bib</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/3540250.3549154">DOI</a>&nbsp;| 
+<a href="oliveira22.pdf">.pdf</a>&nbsp;]
+
+</p>
+<p><a name="dahlqvist22"></a>
+
+Fredrik Dahlqvist and Renato Neves.
+ The syntactic side of autonomous categories enriched over generalised
+  metric spaces.
+ <em>arXiv preprint arXiv:2208.14356</em>, 2022.
+[&nbsp;<a href="bib_bib.html#dahlqvist22">bib</a>&nbsp;| 
+<a href="dahlqvist22.pdf">.pdf</a>&nbsp;]
+
+
+
+</p><hr><p><em>This file was generated by
+<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.99.</em></p>
+<!-- end -->
+</div>
+
+<div id="outline-container-org0f95d45" class="outline-2">
+<h2 id="org0f95d45">Dissemination</h2>
+<div class="outline-text-2" id="text-org0f95d45">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Invited talk at <a href="https://niccoloveltri.github.io/tsem21/">C. S. Theory Seminar</a>, Tallinn.</td>
+<td class="org-left"><a href="templ_pres.pdf">An Internal Language for Categories Enriched over Generalised Metric Spaces</a></td>
+<td class="org-left">Jan. 2022</td>
+</tr>
+
+<tr>
+<td class="org-left">Invited talk at <a href="https://www.coalg.org/cmcs22/">CMCS'22</a>, Munich.</td>
+<td class="org-left"><a href="Renato.pdf">Coalgebra meets Hybrid Systems</a></td>
+<td class="org-left">Abr. 2022</td>
+</tr>
+
+<tr>
+<td class="org-left">Ibex meeting as part of a  <a href="http://wadt2022.web.ua.pt/">WADT'22</a> special track</td>
+<td class="org-left">---</td>
+<td class="org-left">Jun. 2022</td>
+</tr>
+<tr>
+<td class="org-left">Invited talk at <a href="https://facs-conference.github.io/2022/">FACS'22</a></td>
+<td class="org-left"><a href="facs22.pdf">Semantics for Hybrid Components - Categorical Tools and Techniques</a></td>
+<td class="org-left">Nov. 2022</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgfdcf1e7" class="outline-2">
+<h2 id="orgfdcf1e7">Previous projects</h2>
+<div class="outline-text-2" id="text-orgfdcf1e7">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="http://davinci.di.uminho.pt/">DaVinci</a></td>
+<td class="org-left">Distributed Architectures: Variability and Interaction for Cyber-Physical Systems</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="http://klee.di.uminho.pt/">Klee</a></td>
+<td class="org-left">Coalgebraic Modeling and Analysis for Computational Synthetic Biology</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="https://dali.di.uminho.pt/">Dalí</a></td>
+<td class="org-left">Dynamic logics for cyber-physical systems: towards contract based design</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org714a10e" class="outline-2">
+<h2 id="org714a10e">Acknowledgements</h2>
+<div class="outline-text-2" id="text-org714a10e">
+<p>
+Photo (of the <a href="https://en.wikipedia.org/wiki/Iberian_ibex">Iberian Ibex</a>) by <a href="https://www.arturodefrias.com/">Arturo de Frías</a>. 
+This work is financed by National Funds through the FCT - Fundação para a
+Ciência e a Tecnologia, I.P. (Portuguese Foundation for Science and Technology)
+within the project IBEX, with reference PTDC/CCI-COM/4280/2021.
+</p>
+
+
+<figure id="org1106a63">
+<img src="portugal.png" alt="portugal.png" style="float:left; margin: 0px 10px 0px 0px" title="Portugal" width="180">
+
+</figure>
+
+
+<figure id="org9b23aa7">
+<img src="fct.jpg" alt="fct.jpg" style="float:left; margin: 0px 10px 0px 0px" title="FCT" width="300">
+
+</figure>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Renato Neves</p>
+<p class="date">Created: 2022-04-03 Sun 12:47</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
